@@ -1,5 +1,6 @@
 package com.example.bikeservicev2
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,11 @@ class PhoneActivity : AppCompatActivity() {
         enableEdgeToEdge()
         phoneBinding = ActivityPhoneBinding.inflate(layoutInflater)
         setContentView(phoneBinding.root)
+
+        phoneBinding.phoneNextButton.setOnClickListener {
+            var intent = Intent(this, VerificationActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

@@ -11,7 +11,7 @@
         android:id="@+id/tSMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="72dp"
         android:text="You'll get an SMS to"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,9 +76,9 @@
         android:id="@+id/terms"
         android:layout_width="142dp"
         android:layout_height="26dp"
-        android:layout_marginTop="368dp"
+        android:layout_marginTop="372dp"
         android:text="Terms and Condition"
-        app:layout_constraintTop_toBottomOf="@+id/emailText"
+        app:layout_constraintTop_toBottomOf="@+id/editPhone"
         tools:layout_editor_absoluteX="65dp" />
 
     <TextView
@@ -86,11 +86,8 @@
         android:layout_width="152dp"
         android:layout_height="27dp"
 
-        android:layout_marginTop="368dp"
-        android:layout_marginEnd="52dp"
+        android:layout_marginTop="372dp"
         android:text="|  Privacy Policy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/terms"
-        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+        app:layout_constraintTop_toBottomOf="@+id/editPhone"
+        tools:layout_editor_absoluteX="207dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
