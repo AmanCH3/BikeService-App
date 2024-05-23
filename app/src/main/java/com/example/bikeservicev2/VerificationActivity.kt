@@ -1,5 +1,6 @@
 package com.example.bikeservicev2
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,7 +19,8 @@ class VerificationActivity : AppCompatActivity() {
         verificationBinding = ActivityVerificationBinding.inflate(layoutInflater)
         setContentView(verificationBinding.root)
 
-
+        var intent = Intent(this, PasswordActivity::class.java)
+        startActivity(intent)
 
 
     }
