@@ -58,8 +58,8 @@
 
     <Button
         android:id="@+id/phoneNextButton"
-        android:layout_width="349dp"
-        android:layout_height="60dp"
+        android:layout_width="315dp"
+        android:layout_height="54dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="30dp"
@@ -68,26 +68,31 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/terms" />
+        app:layout_constraintTop_toBottomOf="@+id/terms"
+        app:layout_constraintVertical_bias="0.154" />
 
     <TextView
         android:id="@+id/terms"
         android:layout_width="142dp"
         android:layout_height="26dp"
-        android:layout_marginTop="372dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="388dp"
         android:text="Terms and Condition"
-        app:layout_constraintTop_toBottomOf="@+id/editPhone"
-        tools:layout_editor_absoluteX="65dp" />
+        app:layout_constraintEnd_toStartOf="@+id/privacypolicy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPhone" />
 
     <TextView
         android:id="@+id/privacypolicy"
         android:layout_width="152dp"
         android:layout_height="27dp"
 
-        android:layout_marginTop="372dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="52dp"
         android:text="|  Privacy Policy"
-        app:layout_constraintTop_toBottomOf="@+id/editPhone"
-        tools:layout_editor_absoluteX="207dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/terms"
+        app:layout_constraintTop_toBottomOf="@+id/editPhone" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,8 +19,11 @@ class VerificationActivity : AppCompatActivity() {
         verificationBinding = ActivityVerificationBinding.inflate(layoutInflater)
         setContentView(verificationBinding.root)
 
-        var intent = Intent(this, PasswordActivity::class.java)
-        startActivity(intent)
+
+      verificationBinding.verifyButton.setOnClickListener {
+          var intent = Intent(this, PasswordActivity::class.java)
+          startActivity(intent)
+      }
 
 
     }

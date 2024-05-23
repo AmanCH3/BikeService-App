@@ -1,6 +1,8 @@
 package com.example.bikeservicev2
 
+import android.content.Intent
 import android.os.Bundle
+import androidx.activity.R
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,6 +20,13 @@ class PasswordActivity : AppCompatActivity() {
         setContentView(passwordBinding.root)
 
 
+        passwordBinding.passwordButton.setOnClickListener {
+            var intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
     }
 }
+

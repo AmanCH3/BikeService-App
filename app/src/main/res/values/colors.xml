@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue"> #110d7c </color>
     <color name="getStared"> #072541 </color>
+    <color name="beige"> #dadada </color>
 </resources>

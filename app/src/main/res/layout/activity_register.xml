@@ -7,4 +7,129 @@
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="411dp"
+        android:layout_height="731dp"
+        android:background="@color/beige"
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="-3dp">
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Lets get started"
+            android:textColor="@color/getStared"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.212"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="333dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="39dp"
+            android:text="Please be as accurate and honest as possible when applying to the app Gifting Feature so we can best serve you!"
+            android:textColor="@color/getStared"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/fullnameSign"
+            android:layout_width="332dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="86dp"
+            android:layout_marginEnd="40dp"
+            android:drawableEnd="@drawable/baseline_person_24"
+            android:hint="  Full Legal name"
+            android:textColorHint="@color/getStared"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+
+            android:layout_width="333dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="39dp"
+            android:drawableRight="@drawable/baseline_email_24"
+            android:hint="  Email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/getStared"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullnameSign" />
+
+        <EditText
+            android:id="@+id/phoneSign"
+            android:layout_width="333dp"
+            android:layout_height="67dp"
+
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="39dp"
+            android:autofillHints="phone"
+            android:drawableEnd="@drawable/baseline_phone_24"
+            android:hint="  Phone Number"
+            android:inputType="phone"
+            android:textColorHint="@color/getStared"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+        <TextView
+            android:id="@+id/birthdaySign"
+            android:layout_width="142dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="28dp"
+
+            android:hint="  Birthday"
+            android:textColorHint="@color/getStared"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toStartOf="@+id/spinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneSign" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="153dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/birthdaySign"
+            app:layout_constraintTop_toBottomOf="@+id/phoneSign" />
+
+        <Button
+            android:id="@+id/Finishbutton"
+            android:layout_width="314dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="53dp"
+            android:backgroundTint="@color/getStared"
+            android:text="Finish"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/birthdaySign" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
