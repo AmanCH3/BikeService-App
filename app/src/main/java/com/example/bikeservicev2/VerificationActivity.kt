@@ -11,8 +11,10 @@ import com.example.bikeservicev2.databinding.ActivityVerificationBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthProvider
+import com.google.firebase.firestore.FirebaseFirestore
 
 class VerificationActivity : AppCompatActivity() {
+
 
 
     lateinit var  verificationBinding: ActivityVerificationBinding

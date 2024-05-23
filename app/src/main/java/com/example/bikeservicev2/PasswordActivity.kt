@@ -2,6 +2,7 @@ package com.example.bikeservicev2
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.R
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -21,8 +22,18 @@ class PasswordActivity : AppCompatActivity() {
 
 
         passwordBinding.passwordButton.setOnClickListener {
-            var intent = Intent(this, RegisterActivity::class.java)
-            startActivity(intent)
+//            var intent = Intent(this, RegisterActivity::class.java)
+//            startActivity(intent)
+
+            val password = passwordBinding.passwordText.text.toString()
+            if(password.isNotEmpty()){
+                val intent = Intent(this, RegisterActivity::class.java).apply {
+                    putExtra("Password",password)
+                }
+                startActivity(intent)
+            }else{
+                Toast.makeText(this, "Please enter  a password ",Toast.LENGTH_LONG).show()
+            }
         }
 
 
