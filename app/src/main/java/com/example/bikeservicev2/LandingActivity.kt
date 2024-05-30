@@ -28,5 +28,11 @@ class LandingActivity : AppCompatActivity() {
 
         }
 
+        landingpageBinding.signButton.setOnClickListener{
+            var intent = Intent(this, SignupActivity::class.java)
+            startActivity(intent)
+
+        }
+
     }
 }

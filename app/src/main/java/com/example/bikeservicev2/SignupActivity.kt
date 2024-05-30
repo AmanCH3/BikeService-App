@@ -1,30 +1,24 @@
 package com.example.bikeservicev2
 
-//import RegisterActivity
-import android.content.Intent
+
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.R
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.bikeservicev2.databinding.ActivityPasswordBinding
+import com.example.bikeservicev2.databinding.ActivitySignupBinding
 import com.google.firebase.auth.FirebaseAuth
 
-class PasswordActivity : AppCompatActivity() {
+class SignupActivity : AppCompatActivity() {
 
-    lateinit var passwordBinding: ActivityPasswordBinding
+    lateinit var signupBinding: ActivitySignupBinding
     var auth : FirebaseAuth = FirebaseAuth.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        passwordBinding = ActivityPasswordBinding.inflate(layoutInflater)
-        setContentView(passwordBinding.root)
+         signupBinding= ActivitySignupBinding.inflate(layoutInflater)
+        setContentView(signupBinding.root)
 
-
-        passwordBinding.passwordButton.setOnClickListener {
-            val password = passwordBinding.passwordText.text.toString()
+            signupBinding.signButton.setOnClickListener {
+            val password = signupBinding.signPassword.text.toString()
             if(password.isNotEmpty()){
                 setPassword(password)
             }else{
