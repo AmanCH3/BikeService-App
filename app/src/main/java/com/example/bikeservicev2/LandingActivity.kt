@@ -16,8 +16,8 @@ class LandingActivity : AppCompatActivity() {
         landingpageBinding = ActivityLandingpageBinding.inflate(layoutInflater)
         setContentView(landingpageBinding.root)
 
-        landingpageBinding.getButton.setOnClickListener{
-            var intent = Intent(this, PhoneActivity::class.java)
+        landingpageBinding.loginButton.setOnClickListener{
+            var intent = Intent(this, EmailActivity::class.java)
             startActivity(intent)
 
         }

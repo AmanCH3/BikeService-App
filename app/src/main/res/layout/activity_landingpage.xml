@@ -7,66 +7,74 @@
     android:layout_height="match_parent"
     tools:context=".LandingActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="159dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="126dp"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="466dp"
-            android:layout_height="841dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="-1dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.564"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.13"
-            app:srcCompat="@drawable/layout" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="343dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="center"
+        android:text="Automatically identify verification  which enable  to verify your identity"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="187dp"
-            android:layout_height="153dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.125"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/bikelogo" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="288dp"
+        android:layout_height="291dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="62dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:srcCompat="@drawable/lblbike" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="192dp"
-            android:layout_height="78dp"
-            android:layout_marginTop="16dp"
-            android:text="Tap to get  Servicing online ."
-            android:textColor="@color/white"
-            android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.129"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="47dp"
+        android:backgroundTint="@color/beige"
+        android:gravity="center"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-        <Button
-            android:id="@+id/getButton"
-            android:layout_width="314dp"
-            android:layout_height="54dp"
-            android:layout_marginTop="428dp"
-            android:backgroundTint="@color/getStared"
-            android:gravity="center"
-            android:text="Get Started "
-            android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.493"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/signButton"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="47dp"
+        android:backgroundTint="@color/getStared"
+        android:gravity="center"
+        android:text="Sign up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
