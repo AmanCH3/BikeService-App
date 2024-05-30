@@ -9,18 +9,32 @@
 
 
     <TextView
-        android:id="@+id/tSMS"
+        android:id="@+id/tLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="142dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="142dp"
-        android:text="You'll get an SMS to"
+        android:text="Login to your account"
+        android:textColor="@color/getStared"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="307dp"
+        android:text="Password"
+        android:textColor="@color/getStared"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editEmailAddress" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -31,7 +45,6 @@
         android:layout_marginEnd="21dp"
         android:drawableEnd="@drawable/baseline_remove_red_eye_24"
         android:ems="10"
-        android:hint="Password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,17 +69,17 @@
 
     <Button
         android:id="@+id/phoneButton2"
-        android:layout_width="315dp"
-        android:layout_height="54dp"
+        android:layout_width="293dp"
+        android:layout_height="55dp"
         android:layout_marginStart="54dp"
         android:layout_marginEnd="42dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="52dp"
         android:backgroundTint="@color/getStared"
         android:text="NEXT"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.681"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -74,7 +87,7 @@
         android:layout_width="145dp"
         android:layout_height="30dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="228dp"
         android:clickable="true"
         android:focusable="true"
@@ -83,7 +96,7 @@
         android:textColor="@color/getStared"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
@@ -92,8 +105,7 @@
         android:layout_width="142dp"
         android:layout_height="26dp"
         android:layout_marginStart="66dp"
-        android:layout_marginTop="177dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginTop="216dp"
         android:text="Terms and Condition"
         app:layout_constraintEnd_toStartOf="@+id/privacypolicy"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,8 +116,7 @@
         android:layout_width="152dp"
         android:layout_height="27dp"
 
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="177dp"
+        android:layout_marginTop="216dp"
         android:layout_marginEnd="41dp"
         android:text="|  Privacy Policy"
         app:layout_constraintEnd_toEndOf="parent"
@@ -136,6 +147,22 @@
         android:layout_marginEnd="279dp"
         android:text="Email Address"
         android:textColor="@color/getStared"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="194dp"
+        android:text="Login"
+        android:textColor="@color/getStared"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
