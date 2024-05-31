@@ -5,15 +5,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="411dp"
         android:layout_height="731dp"
         android:background="@color/beige"
-        tools:layout_editor_absoluteX="-9dp"
-        tools:layout_editor_absoluteY="-3dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <TextView
@@ -34,12 +36,13 @@
             android:layout_width="333dp"
             android:layout_height="59dp"
             android:layout_marginStart="39dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="39dp"
             android:text="Please be as accurate and honest as possible when applying to the app Gifting Feature so we can best serve you!"
             android:textColor="@color/getStared"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -91,29 +94,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
-        <TextView
-            android:id="@+id/birthdaySign"
-            android:layout_width="142dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="28dp"
-
-            android:hint="  Birthday"
-            android:textColorHint="@color/getStared"
-            android:textSize="19sp"
-            app:layout_constraintEnd_toStartOf="@+id/spinner"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/phoneSign" />
 
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="153dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="28dp"
+            android:layout_width="342dp"
+            android:layout_height="58dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="35dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/birthdaySign"
             app:layout_constraintTop_toBottomOf="@+id/phoneSign" />
 
         <Button
@@ -128,7 +116,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/birthdaySign" />
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
